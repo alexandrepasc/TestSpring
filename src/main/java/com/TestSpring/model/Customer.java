@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "customer")
-public class Customer {
+public class Customer implements Serializable {
 
   private static final long serialVersionUID = -2343243243242432341L;
   @Id
@@ -22,6 +22,11 @@ public class Customer {
 
   @Column(name = "lastname")
   private String lastName;
+
+  public Customer(String firstName, String lastName) {
+    setFirstName(firstName);
+    setLastName(lastName);
+  }
 
   public Long getId() {
     return id;
