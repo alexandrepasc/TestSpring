@@ -12,6 +12,7 @@ import java.io.Serializable;
 @Table(name = "customer")
 public class Customer {
 
+  private static final long serialVersionUID = -2343243243242432341L;
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;

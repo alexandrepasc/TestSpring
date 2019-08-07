@@ -1,6 +1,7 @@
 package com.TestSpring.repository;
 
 import com.TestSpring.model.Customer;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
