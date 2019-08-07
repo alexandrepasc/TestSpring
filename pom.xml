@@ -70,7 +70,7 @@
                 <version>2.1.6.RELEASE</version>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>com.TestSpring.application.HelloApp</mainClass>
+                    <mainClass>com.TestSpring.HelloApp</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -87,7 +87,7 @@
 <!--                    <archive>-->
 <!--                        <manifest>-->
 <!--                            <addClasspath>true</addClasspath>-->
-<!--                            <mainClass>com.TestSpring.application.HelloApp</mainClass>-->
+<!--                            <mainClass>com.TestSpring.HelloApp</mainClass>-->
 <!--                        </manifest>-->
 <!--                    </archive>-->
 <!--                    <descriptorRefs>-->

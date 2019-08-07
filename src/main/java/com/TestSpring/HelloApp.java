@@ -1,4 +1,4 @@
-package com.TestSpring.application;
+package com.TestSpring;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
