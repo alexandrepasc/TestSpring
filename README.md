@@ -6,4 +6,7 @@ https://dzone.com/articles/spring-boot-and-postgresql <br><br>
 https://www.concretepage.com/spring-boot/spring-boot-crudrepository-example <br><br>
 <br>
 <h6>Get by ID</h6>
-https://stackoverflow.com/questions/49316751/spring-data-jpa-findone-change-to-optional-how-to-use-this
+https://stackoverflow.com/questions/49316751/spring-data-jpa-findone-change-to-optional-how-to-use-this <br><br>
+<br>
+<h6>Authentication</h6>
+https://hellokoding.com/registration-and-login-example-with-spring-security-spring-boot-spring-data-jpa-hsql-jsp/ <br><br>
