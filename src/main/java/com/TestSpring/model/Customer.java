@@ -23,7 +23,15 @@ public class Customer implements Serializable {
   @Column(name = "lastname")
   private String lastName;
 
+  public Customer() {}
+
   public Customer(String firstName, String lastName) {
+    setFirstName(firstName);
+    setLastName(lastName);
+  }
+
+  public Customer(Long id, String firstName, String lastName) {
+    setId(id);
     setFirstName(firstName);
     setLastName(lastName);
   }
