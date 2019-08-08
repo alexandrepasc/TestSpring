@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class CostumerController {
@@ -55,9 +56,11 @@ public class CostumerController {
   }
 
   @RequestMapping("/search/{id}")
-  public String search(@PathVariable long id) {
-    String customer = "";
-    customer = repository.findById(id).toString();
+  public Customer search(@PathVariable long id) {
+//    String customer = "";
+//    customer = repository.findById(id).toString();
+    Optional<Customer> customerOptional = repository.findById(id);
+    Customer customer = customerOptional.get();
     return customer;
   }
 
