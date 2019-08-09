@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import java.util.UUID;
 
 @Entity
-@Table(name = "user")
+@Table(name = "user_auth")
 public class User {
 
   @Id
@@ -26,6 +26,11 @@ public class User {
   private String password;
 
   public User(){}
+
+  public User(String username, String password) {
+    setUsername(username);
+    setPassword(password);
+  }
 
   public UUID getId() {
     return id;
