@@ -15,8 +15,8 @@ public class UserController {
 
   @PostMapping("/register")
   public String register(@RequestBody User user) {
-    repository.save(new User(user.getUsername(), user.getPassword()));
+    User newUser = repository.save(new User(user.getUsername(), user.getPassword()));
 
-    return "register";
+    return newUser.getId().toString();
   }
 }
